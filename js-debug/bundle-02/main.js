@@ -39,13 +39,13 @@ printColorsNumber();
 
 
 // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 
 // ESERCIZIO 4
