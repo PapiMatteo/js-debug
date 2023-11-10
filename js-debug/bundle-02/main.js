@@ -75,58 +75,33 @@ checkAccess();
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
-// function checkAccessImproved() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+function checkAccessImproved() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = 'false';
 
-//     for (let i = 0; i < addresses.length; i++) {
-//         const email = addresses[i];
+    for (let i = 0; i < addresses.length; i++) {
+        const email = addresses[i];
 
-//         if (userEmail.length > 5) {
+        if (userEmail.length > 5) {
 
-//             if (email === userEmail) {
-//                 grantAccess = 'true';
+            if (email === userEmail) {
+                grantAccess = 'true';
 
-//             }
+            }
 
-//         }
+        }
 
-//         if (grantAccess) {
-//             console.log('Accesso consentito!');
-//         } else {
-//             console.log('Accesso negato!');
-//         }
-//     }
-//     checkAccessImproved();
+        if (grantAccess) {
+            console.log('Accesso consentito!');
+        } else {
+            console.log('Accesso negato!');
+        }
+    }
+    checkAccessImproved();
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Come la funzione precedente.
+//L'errore presente e' una dimenticanza della chiusura delle parentesi grafe della funzione.
