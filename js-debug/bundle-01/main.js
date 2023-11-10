@@ -15,14 +15,17 @@ for (let i = 0; i > 5; i++) {
     console.log(i);
 }
 
+// Il ciclo for non inizia perche' la condizione i > 5 non e' vera quindi non effettua il codice all'interno.
+// Per far si che il ciclo funzioni bisogna impostare come condizione i < 5.
+
 
 // ESERCIZIO 2
-// function addIfEven(num) {
-//     if (num % 2 = 0) {
-//         return num + 5;
-//     }
-//     return num;
-// }
+function addIfEven(num) {
+    if (num % 2 = 0) {
+        return num + 5;
+    }
+    return num;
+}
 
 
 // ESERCIZIO 3
