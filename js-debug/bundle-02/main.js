@@ -104,4 +104,4 @@ function checkAccessImproved() {
 }
 
 // Come la funzione precedente.
-//L'errore presente e' una dimenticanza della chiusura delle parentesi grafe della funzione.
+// L'errore presente e' una dimenticanza della chiusura delle parentesi grafe della funzione.
