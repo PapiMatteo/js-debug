@@ -47,25 +47,31 @@ function addNumbers() {
 }
 addNumbers();
 
+// Funzione che chiede un numero in entrata inserito dall'utente e lo incrementa di 12 restituendo la somma.
+// Il dato restituito da un propt e' di tipo stringa quindi bisogna utilizzare parseInt sul prompt per avere come tipo di dato un numero intero e poterlo sommare.
+
 
 // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+
+// Funzione che controlla se la mail inserita dall'utente e' presente nell'array di mail consentite.
+// L'errore e' nella variabile grantAccess perche i valori true e false erano scritti come stringa mente nella verifica di questi ultimi il controllo avveniva su valori booleani.
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
